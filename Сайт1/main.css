@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+#sitebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #252525;
+    border-right: 4px solid lightskyblue;
+    left: -250px;
+
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+#sitebar.active {left: 0px;}
+#sitebar ul li:first-child {
+    color: rgb(255, 255, 255);
+    font-size: 1.95em;
+    list-style: none;
+    padding: 25px 10px 10px 10px;
+
+
+}
+#sitebar ul li:not(first-child) {
+    width: 90%;
+    margin-left: 10%;
+    font-size: 1.1em;
+    list-style: none;
+    padding: 15px 10px;
+    
+
+}
+#sitebar ul li a {
+    color: dimgray;
+    text-decoration: none;
+}
+#sitebar ul li a:hover {color: lightskyblue;}
+
+#sitebar .toggle-btn {
+    position: absolute;
+    left: 270px;
+    top: 20px;
+    background: #E0E5EA;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#sitebar .toggle-btn:hover { background:#252525}
+
+#sitebar .toggle-btn span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: #666;
+    margin: 4px;
+}
